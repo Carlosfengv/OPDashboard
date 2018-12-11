@@ -1,6 +1,7 @@
 import React from 'react';
 import { Columns, Column , Rate} from '@QCFE/lego-ui';
 import Lincharts from './Charts/linechart'
+import Piecharts from './Charts/piechart';
 
 
 const MainDashboard = () => (
@@ -57,7 +58,19 @@ const MainDashboard = () => (
     </Columns>
     <Columns>
         <Column className="Monitor">
-            <div className="Ocard"><Lincharts></Lincharts></div>
+            <div className="Ocard flex5">
+                <div className="CardContent">
+                    <label>上架应用</label>
+                    <Lincharts></Lincharts>
+                </div>
+            </div>
+            
+            <div className="Ocard flex3">
+            <div className="CardContent">
+                <label>服务商状态统计</label>
+                <Piecharts></Piecharts>
+            </div>
+            </div>
         </Column>
     </Columns>
     <Columns>

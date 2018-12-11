@@ -28,13 +28,13 @@ class SideCard extends Component{
                     FullScreen: true
                 })
             };
-            console.log(ScreenWidth, this.state.FullScreen);
+            /* console.log(ScreenWidth, this.state.FullScreen); */
         }
     }
-    componentWillUnmount() {       
+/*     componentWillUnmount() {       
         window.removeEventListener('resize',this.screenChange);
         console.log("un")
-    }
+    } */
     render (){
         return  <div className="SideCar Right">
                     {
