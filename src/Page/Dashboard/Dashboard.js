@@ -1,10 +1,11 @@
 import React from 'react';
-import MainDashboard from './MainDashboard'
+import MainDashboard from './MainDashboard';
+import SideCard from './SideCard'
 
 const Dashboard = () => (
     <div className="content TitleCard">
         <MainDashboard></MainDashboard>
-        <div className="SideCar Right"></div>
+        <SideCard></SideCard>
     </div>
 );
 

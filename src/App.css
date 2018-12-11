@@ -1,12 +1,33 @@
+::-moz-selection{background: #854fb9; color: #fff }
+::selection {background: #854fb9;color: #fff}
+ul li{
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 .App{
   position: fixed;
   height: 100%;
   width: 100%;
 }
-h3{
-  font-family: Roboto;
-  font-size: 20px;
+h2{
+  font-family: Roboto,PingFangSC;
+  font-size: 32px;
   font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #474e5d;
+  margin: 0 !important;
+}
+h2 small{
+  font-size: 16px;
+}
+h3{
+  font-family:  Roboto,PingFangSC;
+  font-size: 20px;
+  font-weight: 500 !important;
   font-style: normal;
   font-stretch: normal;
   line-height: 28px;
@@ -14,8 +35,38 @@ h3{
   color: #343945;
   margin-bottom: 8px !important; 
 }
+h5{
+  font-family: Roboto,PingFangSC;
+  font-size: 16px;
+  font-weight: 500 !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #343945;
+}
+label{
+  font-family: Roboto,PingFangSC;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 12px; 
+}
+p{
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #343945;
+  margin-bottom: 0px !important;
+}
 .Description{
-  font-family: Roboto;
+  font-family: Roboto,PingFangSC;
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -43,15 +94,40 @@ h3{
 .Green{
   color: #29b565;
 }
+.Pink{
+  color: #854fb9;
+}
+.Tip{
+  background: #efe6f8;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  color: #854fb9;
+  border-radius: 20px;
+  text-align: center; 
+  font-size: 20px;
+  margin: 2px;
+}
 .icon{
   display: inline-block;
   height: 14px;
   width: 14px;
   margin: 4px;
   vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 .icon.ok{
   background: url('./Image/group-2.svg') 
+}
+.icon.up{
+  background: url('./Image/Up.svg') no-repeat center center;
+}
+.icon.down{
+  background: url('./Image/down.svg') no-repeat center center;
+}
+.CardContent{
+  padding: 24px;
 }
 .main-layout{
   height: inherit;
@@ -83,11 +159,36 @@ h3{
   border-left: 1px solid #eff0f5; 
   background-color: #FFF; 
 }
+.showTitle{
+  padding-top: 12px;
+  padding-bottom: 20px; 
+}
+.showContent .Date{
+  color: #8c96ad;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.showContent .items .item {
+  padding-top: 12px; 
+}
+.showContent .items .item img{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-right: 8px; 
+}
+.showContent .items .item .content{
+  display: inline-block;
+  margin-top: 8px; 
+}
 .column.Operating{
   display: flex;
 }
 .column.Operating .Ocard{
-  height: 108px;
   background: #FFF;
   border-radius: 2px;
   box-shadow: 0 1px 4px 0 rgba(73, 33, 173, 0.06), 0 4px 8px 0 rgba(35, 35, 36, 0.04);
@@ -106,6 +207,28 @@ h3{
 }
 .column.Operating div:last-child{
   margin-right: 0px; 
+}
+.Operating .Group{
+  display: flex;
+}
+.Operating .Group .flex1{
+  flex: 1;
+}
+.Operating .Group .item{
+  border-right: 1px solid #eff0f5 ;
+}
+.Operating .Group .item .Value{
+  margin-top: 12px !important; 
+}
+.Operating .Group .item:last-child{
+  border-right: none; 
+}
+.Group.Service label,.Group.Service .Value {
+  color: #fff !important;
+}
+.Group.Service label,.Group.Service .Value .right{
+  margin-bottom: 0;
+  margin-top: 12px;
 }
 
 .Monitor .Ocard{
@@ -135,6 +258,84 @@ h3{
   box-shadow: 0 1px 4px 0 rgba(73, 33, 173, 0.06), 0 4px 8px 0 rgba(35, 35, 36, 0.04);
   background: #fff;
 }
+.News .items{
+  margin-top: 20px; 
+}
+.News .items .item{
+  margin-bottom: 20px; 
+}
+.News .items .item:hover{
+  background: rgba(213, 218, 229, 0.15);
+  cursor: pointer;
+}
+.News .CardContent .Content .num{
+  font-family: Roboto,PingFangSC;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #d5dae5;
+}
+.News .CardContent .Content .Company{
+  font-family: Roboto,PingFangSC;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: #343945;
+}
+.News .CardContent .FirstContent .Details{
+  display: flex;
+  margin-top: 32px; 
+}
+.News .CardContent .FirstContent .Details div{
+  flex: 1;
+}
+.News .CardContent .FirstContent .Details div h5{
+  margin-top: 12px; 
+}
+.News .CardContent .Content table tr td{
+  border-bottom: 1px solid #eff0f5;
+  padding: 17px 0;
+}
+.News .CardContent .Content table tr:last-child td{
+  border: none;
+}
+.News .CardContent .Content table tr td:first-child{
+  text-align: left;
+}
+.News .CardContent .Content table tr td .rateControl{
+  margin-top: 8px; 
+}
+.News .CardContent .Content table tr td .rateControl ul{
+  margin: 0 !important;
+}
+.News .CardContent .Content table tr td .rateControl ul .default-li{
+  margin-right: 4px !important;
+}
+.News .CardContent .Content table tr td .rateControl .result-font{
+  font-family: Roboto,PingFangSC;
+  font-size: 16px;
+  font-weight: 500 !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #343945;
+}
+.News .CardContent .Content table tr td .rateControl .rate-container li.default-li{
+  width: 12px;
+}
+.News .CardContent .Content table tr td .rateControl .rate-container .star-ico{
+  width: 12px;
+  height: 12px;
+}
+
 @media(max-width:1440px){
   .SideCard.Main{
     padding-right: 80px;
