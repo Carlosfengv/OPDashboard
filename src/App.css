@@ -1,32 +1,146 @@
-.App {
-  text-align: center;
+.App{
+  position: fixed;
+  height: 100%;
+  width: 100%;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+h3{
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 28px;
+  letter-spacing: normal;
+  color: #343945;
+  margin-bottom: 8px !important; 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Description{
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 14px;
+  letter-spacing: normal;
+  color: #a2a9be;
+}
+.Description.Regular{
+  color: #343945;
+  font-size: 12px;
+}
+.Text-left{
+  text-align: left;
+}
+.Text-right{
+  text-align: right;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.Green{
+  color: #29b565;
+}
+.icon{
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin: 4px;
+  vertical-align: middle;
+}
+.icon.ok{
+  background: url('./Image/group-2.svg') 
+}
+.main-layout{
+  height: inherit;
+  background: rgba(213, 218, 229, 0.15);
+}
+.main-layout-sider{
+  border-right: 1px solid #eff0f5;
+}
+.content{
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+}
+.TitleCard{
+  padding-top: 12px; 
+  padding-bottom: 20px;
+}
+.SideCard.Main{
+  padding: 20px;
+  padding-right: 472px;
+}
+.SideCar.Right{
+  position: fixed;
+  right: 0;
+  width: 451px;
+  top: 0;
+  max-width: 451px;
+  height: inherit;
+  border-left: 1px solid #eff0f5; 
+  background-color: #FFF; 
+}
+.column.Operating{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.column.Operating .Ocard{
+  height: 108px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 rgba(73, 33, 173, 0.06), 0 4px 8px 0 rgba(35, 35, 36, 0.04);
+}
+.column.Operating .Ocard.flex1{
+  background-image: linear-gradient(311deg, #8454cd, #854fb9 32%, #484999);
+}
+.Operating>.flex2{
+  flex: 2;
+}
+.Operating>.flex1{
+  flex: 1;
+}
+.column.Operating div{
+  margin-right: 20px
+}
+.column.Operating div:last-child{
+  margin-right: 0px; 
 }
 
-.App-link {
-  color: #61dafb;
+.Monitor .Ocard{
+  height: 267px;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 rgba(73, 33, 173, 0.06), 0 4px 8px 0 rgba(35, 35, 36, 0.04);
+  background: #fff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.column.News{
+  display: flex;
+}
+.column.News .flex5{
+  flex: 5
+}
+.column.News .flex3{
+  flex: 3
+}
+.column.News .Ocard{
+  margin-right: 20px;
+}
+.column.News .Ocard:last-child{
+  margin-right: 0; 
+}
+.News .Ocard{
+  height: 328px;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 rgba(73, 33, 173, 0.06), 0 4px 8px 0 rgba(35, 35, 36, 0.04);
+  background: #fff;
+}
+@media(max-width:1440px){
+  .SideCard.Main{
+    padding-right: 80px;
   }
-  to {
-    transform: rotate(360deg);
+  .SideCar.Right{
+    width: 59px;
+    max-width: 59px;
   }
 }
