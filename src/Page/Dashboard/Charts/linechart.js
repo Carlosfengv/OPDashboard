@@ -6,7 +6,9 @@ import HighchartMore from 'highcharts/highcharts-more';
 HighchartMore(Highcharts);
 var options = {
 	chart: {
-		type: 'column'
+		type: 'column',
+		renderTo:'container',
+		reflow: true
 	},
 	title: {
 		text: ''
@@ -55,9 +57,13 @@ class Lincharts extends Component {
 
     componentDidMount(){
 		this.chart=new Highcharts['Chart'](this.refs.container,options);
+/* 		const _this = this.chart;
+		window.addEventListener('resize',function(){
+			_this.reflow();
+		}); */
 	}
     render(){
-        return <div ref="container" style={{width:"100%",height:"184px",marginTop:"32px"}}></div>
+        return <div className="Ochart" ref="container" style={{height:"184px",marginTop:"32px"}}></div>
     }
 }
 

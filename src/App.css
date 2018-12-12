@@ -128,6 +128,7 @@ p{
 }
 .CardContent{
   padding: 24px;
+  width: 100%;
 }
 .main-layout{
   height: inherit;
@@ -138,8 +139,7 @@ p{
 }
 .content{
   position: relative;
-  height: 100%;
-  overflow-y: auto;
+  height: 100%
 }
 .TitleCard{
   padding-top: 12px; 
@@ -233,12 +233,18 @@ p{
 
 .Monitor{
   display: flex !important;
+  position: relative;
 }
 .Monitor .flex5{
   flex: 5;
+  box-sizing: content-box;
 }
 .Monitor .flex3{
   flex: 3;
+  box-sizing: content-box;
+}
+.Monitor .Ochart{
+  max-width: calc(100% - 49px) !important;
 }
 .Monitor .Ocard{
   height: 267px;

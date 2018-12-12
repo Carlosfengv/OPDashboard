@@ -52,10 +52,10 @@ var options = {
 class Piecharts extends Component {
 
     componentDidMount(){
-		this.chart=new Highcharts['Chart'](this.refs.Piecontainer,options);
+		this.chart=new Highcharts['Chart'](this.refs.Piecontainer,options).reflow();
 	}
     render(){
-        return <div ref="Piecontainer" style={{width:"100%",height:"184px",marginTop:"32px"}}></div>
+        return <div className="Ochart" ref="Piecontainer" style={{height:"184px",marginTop:"32px"}}></div>
     }
 }
 

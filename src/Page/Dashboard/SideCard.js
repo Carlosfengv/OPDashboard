@@ -14,7 +14,7 @@ class SideCard extends Component{
    
     componentDidMount() {
         this.screenChange();
-        console.log("didmount")
+        /* console.log("didmount") */
     }
     screenChange = () => {
         window.onresize = () =>{
@@ -22,7 +22,7 @@ class SideCard extends Component{
             if(ScreenWidth<1440){
                 this.setState({
                     FullScreen: false
-                })
+                });
             }else{
                 this.setState({
                     FullScreen: true
