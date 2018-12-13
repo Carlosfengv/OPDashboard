@@ -5,6 +5,14 @@ ul li{
   margin: 0 !important;
   padding: 0 !important;
 }
+.main-layout-sider{
+  min-width: 57px;
+  background: #fff;
+}
+.menu-item a {
+  flex: none !important;
+  line-height: inherit !important;
+}
 .App{
   position: fixed;
   height: 100%;
