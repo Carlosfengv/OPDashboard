@@ -14,14 +14,41 @@ const NavMain = () => (
             <MenuItem title={<Icon name="shield" />} key="k0"><Link to="/home"><img alt="logo" src={logo} ></img></Link></MenuItem>
         </MenuGroup>
         <MenuGroup>
-            <MenuItem title={<Icon name="dashboard" />} key="k1">
+            <MenuItem key="k1">
+              <Icon name="dashboard" />
             </MenuItem>
-            <MenuItem title={<Icon name="appcenter" /> }key="k2">
+            <MenuItem key="k2">
+              <Icon name="appcenter" />
+            </MenuItem>
+            <MenuItem key="k3">
+              <Icon name="shield" />
+            </MenuItem>
+            <MenuItem key="k4">
+              <Icon name="components" />
+            </MenuItem>
+            <MenuItem key="k5">
+              <Icon name="group" />
+            </MenuItem>
+            <MenuItem key="k6">
+              <Icon name="cogwheel" />
             </MenuItem>
                 
+                
         </MenuGroup>
-        <MenuGroup>
-            <MenuItem title={<Icon name="shield" />} key="k0"><img alt="logo" src={logo} ></img></MenuItem>
+        <MenuGroup className="Bottom">
+            <MenuItem 
+            key="b1" >
+              <Icon name="magnifier" />
+            </MenuItem>
+            <MenuItem key="b2">
+              <Icon name="bell" />
+            </MenuItem>
+            <MenuItem key="b3">
+              <Icon name="mail" />
+            </MenuItem>
+            <MenuItem key="b4">
+              <Icon name="human" />
+            </MenuItem>
         </MenuGroup>
         
       </Menu>

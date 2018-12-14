@@ -5,6 +5,17 @@ ul li{
   margin: 0 !important;
   padding: 0 !important;
 }
+.NavMain{
+  height: 100%;
+}
+.NavMain .navigation-menu{
+  position: relative;
+}
+.NavMain .navigation-menu .Menu-container ul:last-child{
+  position: absolute;
+  bottom: 0;
+  width: 56px;
+}
 .main-layout-sider{
   min-width: 57px;
   background: #fff;
